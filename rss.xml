@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="/rss.style.xml" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>dervic.blog</title>
+    <description></description>
+    <link>https://dervic.blog/</link>
+    <atom:link href="/rss.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 17 Jan 2026 12:00:14 -0500</pubDate>
+    <lastBuildDate>Sat, 17 Jan 2026 12:00:14 -0500</lastBuildDate>
+    <generator>dervic.blog v4.2</generator>
+    
+    <item>
+        <title>Updated Pocket highlights bookmarklet</title>
+        <description>&lt;p&gt; Bla, Bla, Bla &lt;/p&gt;</description>
+        <pubDate>Mon, 07 Aug 2023 19:51:00 -0400</pubDate>
+        <link>https://dervic.blog/</link>
+        <guid isPermaLink="true">https://dervic.blog/</guid>
+        <category>HTML</category>
+    </item>
+    
+    <item>
+        <title>Groundhog Day Resolutions - 2022 Review</title>
+        <description>&lt;p&gt; Bla, Bla, Bla &lt;/p&gt;
+        </description>
+        <pubDate>Sat, 31 Dec 2022 12:31:00 -0500</pubDate>
+        <link>https://dervic.blog/</link>
+        <guid isPermaLink="true">https://dervic.blog/</guid>
+        <category>CSS</category>
+    </item>
+    
+    <item>
+        <title>Copying all Pocket highlights with a bookmarklet</title>
+        <description>&lt;p&gt; Bla, Bla, Bla &lt;/p&gt;
+        </description>
+        <pubDate>Tue, 12 Oct 2021 10:23:00 -0400</pubDate>
+        <link>https://dervic.blog/</link>
+        <guid isPermaLink="true">https://dervic.blog/</guid>
+        <category>JS</category>
+    </item>
+    
+  </channel>
+</rss>

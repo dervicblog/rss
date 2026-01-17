@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+  <xsl:output method="html"/>
+
+  <xsl:template match="/">
+    <html>
+      <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <xsl:element name="title">
+          <xsl:text>rss feed - </xsl:text>
+          <xsl:value-of select="/rss/channel/title"/>
+        </xsl:element>
+        <style>
+          html {
+              background: #eee;
+          }
+
+          body {
+              max-width: 64em;
+              margin: 1em auto;
+              font-family: monospace;
+              font-size: 1.2em;
+              background: white;
+          }
+
+          h1 {
+              margin: 0;
+              background: #f6f6f6;
+              padding: 0.5em;
+          }
+
+          .items {
+              padding: 1em;
+          }
+
+          span {
+              color: #aaa;
+              font-size: 0.8em;
+          }
+
+          a {
+              color: #0047b5;
+              border-bottom: 2px solid transparent;
+              text-decoration: none;
+              transition: all 150ms ease;
+          }
+
+          a:hover {
+              color: #005be8;
+              border-bottom: 2px solid #005be8;
+          }
+        </style>
+      </head>
+
+      <body>
+        <h1>
+          <xsl:element name="a">
+            <xsl:attribute name="href">
+              <xsl:value-of select="/rss/channel/link" />
+            </xsl:attribute>
+            <xsl:value-of select="/rss/channel/title"/>
+          </xsl:element>
+        </h1>
+
+        <div class="items">
+          <xsl:apply-templates select="/rss/channel/item" />
+        </div>
+      </body>
+    </html>
+  </xsl:template>
+
+  <xsl:template match="item">
+    <p>
+      <xsl:element name="a">
+        <xsl:attribute name="href">
+          <xsl:value-of select="link"/>
+        </xsl:attribute>
+        <xsl:value-of select="title" />
+      </xsl:element>
+      <br/>
+      <span>
+        <xsl:value-of select="pubDate" />
+      </span>
+    </p>
+  </xsl:template>
+</xsl:stylesheet>
